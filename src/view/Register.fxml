@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterViewController">
+   <children>
+      <Label alignment="CENTER_RIGHT" text="Ihre Nutzertyp:" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton fx:id="doctorRadioButton" mnemonicParsing="false" onAction="#action_doctorSelected" text="Arzt" />
+            <RadioButton fx:id="patientRadioButton" mnemonicParsing="false" onAction="#action_patientSelected" text="Patient" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER_RIGHT" text="Kennwort:" />
+            <PasswordField>
+               <HBox.margin>
+                  <Insets left="57.0" />
+               </HBox.margin></PasswordField>
+         </children>
+      </HBox>
+      <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER_RIGHT" text="Kennwort (Wiederh.):" />
+            <PasswordField />
+         </children>
+      </HBox>
+      <ButtonBar>
+         <buttons>
+            <Button fx:id="registerCancelButton" cancelButton="true" mnemonicParsing="false" onAction="#action_cancel" text="Abbrechen" />
+            <Button fx:id="registerRegisterButton" defaultButton="true" mnemonicParsing="false" onAction="#action_register" text="Registrieren" />
+         </buttons>
+      </ButtonBar>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

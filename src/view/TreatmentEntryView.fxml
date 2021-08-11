@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TreatmentEntryViewController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelDate" text="Termindatum" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label fx:id="labelTime" text="Terminuhrzeit (HH:mm)" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="labelReason" text="Grund des Besuchs (Symptome)" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label fx:id="labelDiagnosis" text="Befund (ICD-Code)" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Label fx:id="labelTreatment" text="Behandlung (Medikation)" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+      <Label fx:id="labelNotes" text="Notizen" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <DatePicker fx:id="datepicker" GridPane.columnIndex="1" />
+      <TextField fx:id="textFieldTime" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="textFieldReason" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="textFieldDiagnosis" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="textFieldTreatment" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextArea fx:id="textareaNotes" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Button fx:id="buttonCancel" cancelButton="true" mnemonicParsing="false" onAction="#buttonCancelPressed" text="Abbrechen" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Button fx:id="buttonConfirm" defaultButton="true" mnemonicParsing="false" onAction="#buttonConfirmPressed" text="Bestätigen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+   </children>
+</GridPane>

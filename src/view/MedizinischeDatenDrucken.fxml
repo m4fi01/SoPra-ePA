@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MedizinischeDatenDruckenController">
+   <children>
+      <DatePicker fx:id="dpStartTime" layoutX="225.0" layoutY="100.0" showWeekNumbers="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </DatePicker>
+      <DatePicker fx:id="dpEndTime" layoutX="225.0" layoutY="200.0" showWeekNumbers="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </DatePicker>
+      <Button fx:id="bttCancel" layoutX="200.0" layoutY="270.0" mnemonicParsing="false" onAction="#action_cancel" text="Abbrechen" />
+      <Button fx:id="bttPrint" layoutX="350.0" layoutY="270.0" mnemonicParsing="false" onAction="#action_print" prefHeight="25.0" prefWidth="74.0" text="Drucken" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="60.0" prefHeight="17.0" prefWidth="149.0" text="Zeitraumstartdatum" textFill="#111111">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="160.0" prefHeight="17.0" prefWidth="149.0" text="Zeitraumenddatum" textFill="#111111">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

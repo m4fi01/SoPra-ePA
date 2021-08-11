@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginViewController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="25.0" layoutY="52.0" text="ID" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="52.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="IDFieldLogin" layoutX="138.0" layoutY="54.0" AnchorPane.bottomAnchor="54.5" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="54.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="74.0" layoutY="48.0" prefHeight="26.0" prefWidth="53.0" text="Kennwort" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="48.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <PasswordField layoutX="138.0" layoutY="48.0" AnchorPane.bottomAnchor="48.5" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="48.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="86.0" layoutY="46.0" text="Versichertennummer" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="46.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="insuranceNumberFieldLogin" layoutX="138.0" layoutY="46.0" AnchorPane.bottomAnchor="45.5" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="46.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#action_exit" text="Exit" />
+            <Button mnemonicParsing="false" onAction="#action_register" text="Registrieren" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#action_login" text="Anmelden" />
+         </buttons>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </ButtonBar>
+   </children>
+</VBox>
